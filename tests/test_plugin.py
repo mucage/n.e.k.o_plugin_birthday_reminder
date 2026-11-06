@@ -33,6 +33,10 @@ class Ctx:
         self._host_ctx = HostCtx()
         self.pushed: list[dict] = []
 
+    def push_message(self, **kwargs):
+        self.pushed.append(kwargs)
+        return {"submitted": True}
+
 
 class PluginTests(unittest.IsolatedAsyncioTestCase):
     async def asyncSetUp(self):
