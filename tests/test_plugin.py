@@ -46,6 +46,7 @@ class PluginTests(unittest.IsolatedAsyncioTestCase):
         self.plugin._data = default_data()
         self.plugin._data_path = Path(self.tempdir.name) / "birthdays.json"
         self.plugin._now = lambda: at(8, 30)
+        self.plugin._current_lanlan = lambda: "小八"
 
     async def asyncTearDown(self):
         self.tempdir.cleanup()
