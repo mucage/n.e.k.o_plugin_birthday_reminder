@@ -1,0 +1,41 @@
+[plugin]
+id = "birthday_reminder"
+name = "岁岁念"
+type = "plugin"
+description = "岁岁念：记录朋友生日，并在每天猫娘第一次主动搭话时提醒你送上祝福；支持提前送礼提醒、表格导入和多次提醒，直到你确认已祝福或让猫娘今天别提醒。"
+short_description = "Daily birthday reminders delivered through the character's first proactive chat. Supports xlsx/csv import, gift-ahead tags and snooze-until-confirmed."
+keywords = ["生日", "birthday", "祝福", "礼物", "gift", "提醒", "reminder", "纪念日", "朋友"]
+version = "1.0.0"
+entry = "plugin.plugins.birthday_reminder:BirthdayReminderPlugin"
+passive = true
+
+[plugin.author]
+name = "birthdayXLS"
+
+[plugin.sdk]
+recommended = ">=0.1.0,<0.2.0"
+supported = ">=0.1.0,<0.3.0"
+
+[plugin.i18n]
+default_locale = "zh-CN"
+locales_dir = "i18n"
+
+[plugin.ui]
+enabled = true
+
+[[plugin.ui.panel]]
+id = "main"
+title = "生日提醒"
+entry = "ui/panel.tsx"
+context = "dashboard"
+permissions = ["state:read", "action:call"]
+
+[[plugin.ui.guide]]
+id = "quickstart"
+title = "使用说明"
+entry = "docs/quickstart.md"
+permissions = ["state:read"]
+
+[plugin_runtime]
+enabled = true
+auto_start = true
