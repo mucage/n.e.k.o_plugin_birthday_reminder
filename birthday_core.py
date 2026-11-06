@@ -12,13 +12,12 @@ import json
 import os
 import re
 import tempfile
-import unicodedata
 import uuid
 import zipfile
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any, Iterable, Mapping, Sequence
+from typing import Any, Mapping, Sequence
 from xml.etree import ElementTree as ET
 
 # ---------------------------------------------------------------------------

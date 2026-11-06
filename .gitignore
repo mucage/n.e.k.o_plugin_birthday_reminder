@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 *.neko-plugin
 .DS_Store
+store.db
+.env

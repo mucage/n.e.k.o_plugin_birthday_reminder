@@ -5,7 +5,7 @@ from __future__ import annotations
 import importlib.util
 import sys
 import unittest
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
 
 CORE_PATH = Path(__file__).resolve().parents[1] / "birthday_core.py"

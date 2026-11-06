@@ -126,6 +126,16 @@ TypeScript 面板类型检查（在装有 `typescript` 的环境）：
 tsc --noEmit -p tsconfig.json
 ```
 
+## 市场发布
+
+仓库已按官方插件市场规范补齐：
+
+- `.github/workflows/verify.yml` — 每次 push / PR 调用官方 `plugin-market-verify.yml`；
+- `.github/workflows/release.yml` — 推送 `v*` tag 时调用官方 `plugin-market-release.yml`；
+- `ruff.toml`、`.vscode/`、`tests/test_smoke.py`、`.gitignore` 等仓库检查所需文件。
+
+发布时只需推送与 `plugin.toml` 版本一致的 tag，例如 `v1.0.0`。Market 投稿与审核仍需在 N.E.K.O. 市场页面完成。
+
 ## 兼容性
 
 - Python 3.11+（宿主运行时为 3.11）。

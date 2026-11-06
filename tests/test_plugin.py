@@ -3,20 +3,14 @@
 from __future__ import annotations
 
 import base64
-import sys
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-STUB = Path(__file__).resolve().parent / "stub"
-for path in (str(ROOT.parent), str(STUB)):
-    if path not in sys.path:
-        sys.path.insert(0, path)
-
-from birthday_reminder import BirthdayReminderPlugin  # noqa: E402
-from birthday_reminder.birthday_core import default_data  # noqa: E402
+from _paths import ROOT
+from birthday_reminder import BirthdayReminderPlugin
+from birthday_reminder.birthday_core import default_data
 
 TZ = timezone(timedelta(hours=8))
 

@@ -4,7 +4,3 @@ version = "1.0.0"
 description = "Birthday reminders delivered through N.E.K.O.'s first proactive chat of the day."
 requires-python = ">=3.11"
 dependencies = []
-
-[tool.ruff]
-line-length = 120
-target-version = "py311"
