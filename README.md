@@ -2,6 +2,8 @@
 
 > 岁岁常欢愉，年年皆胜意。
 
+GitHub：<https://github.com/mucage/n.e.k.o_plugin_birthday_reminder>
+
 给 N.E.K.O. 的猫娘插件：记住朋友生日，在每天猫娘第一次主动搭话时提醒你；支持多次提醒，直到你确认已祝福或让她今天别再提醒。
 
 ![plugin](https://img.shields.io/badge/N.E.K.O-plugin-ff7aa2) ![sdk](https://img.shields.io/badge/SDK-%3E%3D0.1.0%2C%3C0.3.0-7aa2ff)
